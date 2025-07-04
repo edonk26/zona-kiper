@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kontak - Zona Kiper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+        <li><a href="latihan.html">Latihan</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+    <h1>Hubungi Zona Kiper</h1>
+    <p class="tagline">Kami siap menerima kritik, saran, atau pertanyaan Anda</p>
+  </header>
+
+  <main>
+  
+    <form name="kontak" action="thank-you.html" method="POST" data-netlify="true" class="kontak-form">
+
+      <input type="hidden" name="form-name" value="kontak">
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+      <button type="submit">Kirim</button>
+
+    </form>
+
+    <!-- Form tersembunyi untuk membantu Netlify mengenali saat build -->
+        <form name="kontak" netlify hidden>
+          <input type="text" name="nama" />
+          <input type="email" name="email" />
+          <textarea name="pesan"></textarea>
+        </form>
+
+    <!-- Tambahkan teks penjelas di sini -->
+        <p style="text-align:center; margin-top: 20px;">
+            Pesanmu akan kami balas secepat mungkin melalui email.
+        </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zona Kiper</p>
+  </footer>
+</body>
+</html>
