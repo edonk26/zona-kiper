@@ -20,7 +20,7 @@
 
   <main>
   
-    <form name="kontak" action="thank-you.html" method="POST" data-netlify="true" class="kontak-form">
+    <form name="kontak" action="https://formspree.io/f/xdkzjnvp" method="POST" class="kontak-form">
 
       <input type="hidden" name="form-name" value="kontak">
 
@@ -33,16 +33,12 @@
       <label for="pesan">Pesan:</label>
       <textarea id="pesan" name="pesan" rows="5" required></textarea>
 
+      <input type="hidden" name="_redirect" value="https://edonk26.github.io/zona-kiper/thank-you.html">
       <button type="submit">Kirim</button>
 
     </form>
 
-    <!-- Form tersembunyi untuk membantu Netlify mengenali saat build -->
-        <form name="kontak" netlify hidden>
-          <input type="text" name="nama" />
-          <input type="email" name="email" />
-          <textarea name="pesan"></textarea>
-        </form>
+
 
     <!-- Tambahkan teks penjelas di sini -->
         <p style="text-align:center; margin-top: 20px;">
